@@ -2,6 +2,7 @@
   "name": "rockit",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "Rubens Zanatta <rubenz001@hotmail.com>",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
