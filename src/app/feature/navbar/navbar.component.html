@@ -1,0 +1,40 @@
+
+<div class="container">
+<nav class="navbar navbar-toggleable-sm navbar-dark bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button"
+    (click)="isCollapsed = !isCollapsed" data-toggle="collapse" 
+    data-target="#id-resp-nav" aria-controls="id-resp-nav" 
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </span>
+  </button>
+  <a class="navbar-brand" routerLink="/">
+    <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Rockit
+  </a>
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/browse" routerLinkActive="active">browse <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/test" routerLinkActive="active">test</a>
+      </li>
+    </ul>
+  </div>
+
+  <span class="hidden-md-up">
+    <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
+      [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
+      <ul class="nav navbar-nav">
+        <li (click)="isCollapsed = true" *ngFor="let menuItem of menuItems"
+          class="nav-item" routerLinkActive="active"
+          [ngClass]="getMenuItemClasses(menuItem)">
+          <a class="nav-item nav-link" [routerLink]="[menuItem.path]" routerLinkActive="active">{{menuItem.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </span>
+</nav>
+</div><!-- container -->

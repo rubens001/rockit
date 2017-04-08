@@ -1,0 +1,15 @@
+.notify-box {
+    position:absolute;top:4em;width:25em;z-index:9999;right:0em
+}
+/* fadeIn effect */
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+/* fadeOut effect */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}

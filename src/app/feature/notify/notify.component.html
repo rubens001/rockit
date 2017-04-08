@@ -1,0 +1,8 @@
+<div class="container notify-box" [style.top]="top">
+  <div *ngFor="let item of items">
+    <div class="alert" [ngClass]="item.class" role="alert" (click)="hide(item)">
+      <i [ngClass]="item.iconClass" aria-hidden="true"></i>
+      <span [innerHtml]="item.message"></span>
+    </div>
+  </div>
+</div>

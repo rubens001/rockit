@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col"><button type="button" class='btn btn-default' (click)="clicked()">Add Alert</button></div>
+    <div class="col"><button type="button" class='btn btn-default' (click)="openModal(idTemplate)">ModalCustom</button></div>
+    <div class="col"><button type="button" class='btn btn-default' (click)="ng2Modal('sm')">modal error sm</button></div>
+    <div class="col"><button type="button" class='btn btn-default' (click)="ng2Modal('md')">modal confirm md</button></div>
+  </div>
+  <div class="row">
+    <div class="col"><button type="button" class='btn btn-default' (click)="ng2Modal('lg')">modal warn lg</button></div>
+    <div class="col"><button type="button" class='btn btn-default' (click)="showNotify()">showNotify</button></div>
+    <div class="col">i18n: {{'Password' | i18n}}</div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-secondary"
+        ngbTooltip="Default tooltip.">
+        Default tooltip
+      </button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-secondary" placement="bottom" ngbTooltip="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</div>
+
+<ng-template #idTemplate let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('DISMISS')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>One fine body !</p>
+    <button type="button" class='btn btn-default' (click)="clicked()">Add Alert</button>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('CANCEL')">Close</button>
+  </div>
+</ng-template>

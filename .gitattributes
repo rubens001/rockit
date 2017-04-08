@@ -1,0 +1,37 @@
+# Default to linux endings
+* text eol=lf
+* text encoding=UTF-8
+
+# OS specific files
+###################
+
+*.sh eol=lf
+*.bat eol=crlf
+
+# Binary files
+##############
+
+# Image files
+*.png binary
+*.jpg binary
+*.gif binary
+*.bmp binary
+*.gz binary
+*.gzip binary
+*.bz2 binary
+
+# Audio files
+*.wav binary
+*.mp3 binary
+*.ogg binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Other binary files
+*.xls binary
+*.xlsx binary

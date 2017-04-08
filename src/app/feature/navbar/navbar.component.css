@@ -1,0 +1,11 @@
+.active {
+  color: #fff;
+}
+.navbar-toggler {
+  color: #eee;
+  border: none;
+}
+button:focus {
+outline: none;
+border: none;
+}
