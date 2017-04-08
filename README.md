@@ -61,7 +61,7 @@ like :
 ### Bootstrap4
 
 ```
-npm install bootstrap@next
+npm install bootstrap@next --save
 
 and I add thi line in my angular-cli.json:
 
