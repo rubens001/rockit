@@ -2,13 +2,15 @@
 
 ### DEPENDENCIES : need node version 6.x+ AND @angular/cli
 
-#### angular-cli install
+#### @angular/cli install
 
 ```sh
 $ npm install -g @angular/cli
 OR
 $ sudo npm install -g @angular/cli
 ```
+
+#### DEMO : [https://fullstack-c6c9e.firebaseapp.com/html/rockit](https://fullstack-c6c9e.firebaseapp.com/html/rockit)
 
 ### START
 ```sh
@@ -102,4 +104,3 @@ npm i -g npm-check-updates
 npm-check-updates -u
 npm install
 ```
-
