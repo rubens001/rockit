@@ -57,7 +57,8 @@ like :
     "dev": "environments/environment.ts",
     "prod": "environments/environment.prod.ts"
     }
-
+In component:
+import $ from 'jquery';
 ```
 
 ### Bootstrap4
